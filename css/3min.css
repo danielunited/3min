@@ -465,7 +465,7 @@ strong {
     width: 100%;
   }
   .paragraph {
-    margin-bottom: 28px;
+    margin-bottom: 18px;
   }
   .form-block {
     width: 100%;
@@ -493,5 +493,12 @@ strong {
     border-color: #d3d3d3;
     background-color: #fff;
   }
+  .emailoctopus-form-row {
+    width: 100%;
+}
+
+.emailoctopus-form-row-subscribe {
+    width: 100%;
+}
 }
 
