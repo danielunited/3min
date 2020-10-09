@@ -48,21 +48,8 @@ body {
 .main {
     max-height: calc(100vh - 50px);
 }}
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; 
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+.grecaptcha-badge {
+  display: none !important;
 }
 </style>
 </head>
@@ -73,11 +60,11 @@ body {
         <h1>כלכלה. 3 דקות בשבוע.</h1>
         <p class="paragraph">בכל שישי, אנחנו מרכזים את הידיעות הכלכליות החשובות ביותר לניוזלטר תמציתי אחד.</p>
         <div class="form-block w-form">
-          <p class="emailoctopus-success-message">
+          <p class="emailoctopus-success-message success-message w-form-done">
           </p>
-          <p class="emailoctopus-error-message">
+          <p class="emailoctopus-error-message error-message w-form-fail">
           </p>
-          <form action="https://emailoctopus.com/lists/11c991dd-fdc6-11ea-a3d0-06b4694bee2a/members/embedded/1.3s/add" method="post" data-message-success="Thanks for subscribing!" data-message-missing-email-address="Your email address is required." data-message-invalid-email-address="Your email address looks incorrect, please try again." data-message-bot-submission-error="This doesn't look like a human submission." data-message-consent-required="Please check the checkbox to indicate your consent." data-message-invalid-parameters-error="This form has missing or invalid fields." data-message-unknown-error="Sorry, an unknown error has occurred. Please try again later." class="emailoctopus-form bound form" data-sitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6" id="email-form" name="email-form" data-name="Email Form" data-widget-id="0">
+          <form action="https://emailoctopus.com/lists/11c991dd-fdc6-11ea-a3d0-06b4694bee2a/members/embedded/1.3s/add" method="post" data-message-success="נרשמת לניוזלטר בהצלחה!" data-message-missing-email-address="כתובת מייל היא חובה." data-message-invalid-email-address="נראה שכתובת המייל אינה תקינה." data-message-bot-submission-error="נראה שאת/ה בוט. אנא נסה שוב" data-message-consent-required="Please check the checkbox to indicate your consent." data-message-invalid-parameters-error="This form has missing or invalid fields." data-message-unknown-error="אופס! משהו השתבש בשליחת הטופס. אנא נסה שוב מאוחר יותר" class="emailoctopus-form bound form" data-sitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6" id="email-form" name="email-form" data-name="Email Form" data-widget-id="0">
           <div class="emailoctopus-form-row">
             <input style="display:none;" id="field_0" name="field_0" type="email" placeholder="" required="required" class="text-field w-input" autofocus="true" maxlength="256" data-name="Email" spellcheck="false">
             <input id="email" name="email" type="email" placeholder="" required="required" class="text-field w-input" autofocus="true" maxlength="256" data-name="Email" spellcheck="false">
