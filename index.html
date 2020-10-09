@@ -64,6 +64,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
+.grecaptcha-badge {
+    display: none !important;
+}
 </style>
 </head>
 <body>
@@ -77,10 +81,42 @@ body {
           </p>
           <p class="emailoctopus-error-message">
           </p>
-          <form action="https://emailoctopus.com/lists/11c991dd-fdc6-11ea-a3d0-06b4694bee2a/members/embedded/1.3s/add" method="post" data-message-success="Thanks for subscribing!" data-message-missing-email-address="Your email address is required." data-message-invalid-email-address="Your email address looks incorrect, please try again." data-message-bot-submission-error="This doesn't look like a human submission." data-message-consent-required="Please check the checkbox to indicate your consent." data-message-invalid-parameters-error="This form has missing or invalid fields." data-message-unknown-error="Sorry, an unknown error has occurred. Please try again later." class="emailoctopus-form bound form" data-sitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6" id="email-form" name="email-form" data-name="Email Form" data-widget-id="0">
+          <form action="https://emailoctopus.com/lists/11c991dd-fdc6-11ea-a3d0-06b4694bee2a/members/embedded/1.3s/add"
+          method="post"
+          data-message-success="נרשמת לניוזלטר בהצלחה!"
+          data-message-missing-email-address="חובה להזין כתובת מייל"
+          data-message-invalid-email-address="נראה שכתובת המייל הזו אינה  תקינה. אנא נסה אחת אחרת"
+          data-message-bot-submission-error="המערכת זיהתה אותך כבוט. אנא נסה שוב"
+          data-message-consent-required="Please check the checkbox to indicate your consent."
+          data-message-invalid-parameters-error="This form has missing or invalid fields."
+          data-message-unknown-error="אופס! אירעה שגיאה בעת שליחת הטופס. אנא נסה שוב מאוחר יותר"
+          class="emailoctopus-form form"
+          data-sitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6" id="email-form" name="email-form" data-name="Email Form" class="form">
           <div class="emailoctopus-form-row">
-            <input style="display:none;" id="field_0" name="field_0" type="email" placeholder="" required="required" class="text-field w-input" autofocus="true" maxlength="256" data-name="Email" spellcheck="false">
-            <input id="email" name="email" type="email" placeholder="" required="required" class="text-field w-input" autofocus="true" maxlength="256" data-name="Email" spellcheck="false">
+            <input style="display:none;" id="field_0"
+                  name="field_0"
+                  type="email"
+                  placeholder
+                  required="required"
+                  class="text-field w-input"
+                  autofocus="true" 
+                  maxlength="256"
+                  data-name="Email" 
+                  placeholder="כתובת דוא&quot;ל"
+                  spellcheck="false"
+            >
+            <input id="email"
+                  name="email"
+                  type="email"
+                  placeholder
+                  required="required"
+                  class="text-field w-input"
+                  autofocus="true" 
+                  maxlength="256"
+                  data-name="Email" 
+                  placeholder="כתובת דוא&quot;ל"
+                  spellcheck="false"
+            >
           </div>
           <script>
             $('#email').on("change paste keyup",function(){
@@ -89,11 +125,21 @@ body {
 
           </script>
 
-          <div aria-hidden="true" class="emailoctopus-form-row-hp" style="display:none;">
-            <input type="text" name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a" tabindex="-1" autocomplete="nope">
+          <div aria-hidden="true"
+            class="emailoctopus-form-row-hp"
+            style="display:none;"
+          >
+            <input type="text"
+                  name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a"
+                  tabindex="-1"
+                  autocomplete="nope"
+            >
           </div>
           <div class="emailoctopus-form-row-subscribe">
-            <button type="submit" data-wait="אנא המתן..." class="submit-button w-button">
+            <button 
+              type="submit"
+              data-wait="אנא המתן..." 
+              class="submit-button w-button">
               הרשמה
               </button>
           </div>
@@ -103,7 +149,7 @@ body {
           <div class="error-message w-form-fail">
             <div>אופס! משהו השתבש בעת שליחת הטופס</div>
           </div>
-        <div class="g-recaptcha" data-theme="light" data-size="invisible" data-type="image" data-sitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6"><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6&amp;co=ZmlsZTo.&amp;hl=en&amp;type=image&amp;v=48TunWH-ZrLteSwFVbw6tVnx&amp;theme=light&amp;size=invisible&amp;cb=dscqes55a81n" width="256" height="60" role="presentation" name="a-4dlfi6sz8eh6" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div></form></div>
+        </div>
         <div class="div-block-2">
           <div class="div-block">
             <div class="text-block">צפייה בניוזלטר לדוגמא</div>
