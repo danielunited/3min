@@ -181,15 +181,12 @@ strong {
 }
 
 .text-block {
-  position: relative;
-  z-index: 1;
-  color: #737373;
   font-size: 16px;
   line-height: 24px;
-  cursor: pointer;
 }
 
 .div-block-2 {
+  display: none;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -202,7 +199,7 @@ strong {
 
 .form-block {
   max-width: 100%;
-  margin-bottom: 18px;
+  margin-bottom: 24px;
 }
 
 .center-text {
@@ -272,11 +269,6 @@ strong {
   font-size: 14px;
 }
 
-.footer-text.mouse-cursor {
-  position: relative;
-  z-index: 1;
-}
-
 .pratiut {
   position: fixed;
   left: 0px;
@@ -308,10 +300,6 @@ strong {
   text-align: right;
 }
 
-.div-block-3.gray-bg {
-  padding: 0px;
-}
-
 .text-block-2 {
   margin-bottom: 18px;
   font-size: 32px;
@@ -327,7 +315,7 @@ strong {
   bottom: auto;
   width: 46px;
   height: 46px;
-  padding: 6px;
+  padding: 4px;
   border-radius: 1000px;
   cursor: pointer;
 }
@@ -337,46 +325,6 @@ strong {
 }
 
 .mouse-cursor {
-  cursor: pointer;
-}
-
-.sample {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 1;
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  padding-right: 18px;
-  padding-left: 18px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: rgba(255, 241, 229, 0.9);
-}
-
-.close-btn-sample {
-  position: absolute;
-  left: 18px;
-  top: 18px;
-  right: auto;
-  bottom: auto;
-  width: 46px;
-  height: 46px;
-  padding: 6px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #dfdfdf;
-  border-radius: 1000px;
-  background-color: #fff;
   cursor: pointer;
 }
 
@@ -402,6 +350,9 @@ strong {
   .image-2 {
     width: 100%;
   }
+  .pratiut {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -413,12 +364,6 @@ strong {
     height: 420px;
   }
   .close-btn {
-    left: 24px;
-  }
-  .sample {
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-  .close-btn-sample {
     left: 24px;
   }
 }
@@ -482,12 +427,6 @@ strong {
     overflow: auto;
   }
   .close-btn {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #d3d3d3;
-    background-color: #fff;
-  }
-  .close-btn-sample {
     border-style: solid;
     border-width: 1px;
     border-color: #d3d3d3;
