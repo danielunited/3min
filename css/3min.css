@@ -411,6 +411,7 @@ strong {
 
 .second-heading {
   margin-top: 18px;
+  margin-bottom: 8px;
   color: #121212;
   font-size: 18px;
   line-height: 24px;
@@ -563,6 +564,20 @@ strong {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.button.floating-button {
+  position: fixed;
+  right: 24px;
+  bottom: 6px;
+  z-index: 1;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #990f3d;
+  font-family: ibm-plex-sans-hebrew, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+}
+
 .information {
   margin-top: 18px;
   padding: 18px;
@@ -583,6 +598,17 @@ strong {
   color: #121212;
   font-weight: 700;
   text-align: center;
+}
+
+.newsletter-title {
+  max-width: 405px;
+  margin-right: auto;
+  margin-bottom: 18px;
+  margin-left: auto;
+  color: #6b6b6b;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 1440px) {
@@ -671,6 +697,10 @@ strong {
   .section {
     min-height: auto;
   }
+
+  .newsletter-title {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -754,6 +784,11 @@ strong {
     margin-bottom: 36px;
     font-size: 48px;
     line-height: 58px;
+  }
+
+  .button.floating-button {
+    position: static;
+    width: 100%;
   }
 }
 
