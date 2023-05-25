@@ -58,7 +58,7 @@ strong {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  height: 100vh;
+  height: 100dvh;
   max-width: 100vw;
   padding-top: 36px;
   -webkit-box-orient: vertical;
@@ -74,7 +74,7 @@ strong {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('../images/main-graphic-v5.jpg');
+  background-image: url("../images/main-graphic-v5.jpg");
   background-position: 50% 100%;
   background-size: 920px;
   background-repeat: no-repeat;
@@ -257,6 +257,7 @@ strong {
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #f2dfce;
+  margin-bottom: -24px;
 }
 
 .footer-text {
@@ -281,7 +282,7 @@ strong {
   z-index: 1;
   display: none;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   padding-right: 18px;
   padding-left: 18px;
   -webkit-box-pack: center;
@@ -344,7 +345,7 @@ strong {
   z-index: 1;
   display: none;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   padding-right: 18px;
   padding-left: 18px;
   -webkit-box-pack: center;
@@ -442,7 +443,7 @@ strong {
 .newsletter-body {
   padding: 24px;
   background-color: #f6f6f6;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #121212;
   font-size: 14px;
   line-height: 20px;
@@ -498,7 +499,7 @@ strong {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
+  min-height: 100dvh;
   padding-top: 48px;
   padding-right: 12px;
   padding-left: 12px;
@@ -611,14 +612,14 @@ strong {
   font-weight: 700;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1339px) {
   h1 {
     font-size: 68px;
     line-height: 72px;
   }
 
   .main {
-    background-size: 1080px;
+    background-size: 1060px;
   }
 
   .text-field {
@@ -791,4 +792,3 @@ strong {
     width: 100%;
   }
 }
-

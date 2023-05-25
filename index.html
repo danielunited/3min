@@ -33,11 +33,11 @@
   }}();
 </script>
   <style>
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 479px) and (max-width: 1339px) {
 .main {
-    max-height: calc(100vh - 42px);
+    max-height: calc(100dvh + 42px);
 }}
-@media screen and (min-width: 991px) and (max-width: 1440px) {
+@media screen and (min-width: 991px) and (max-width: 1339px) {
 body {
     transform: scale(0.925);
     transform-origin: bottom;
@@ -49,7 +49,7 @@ body {
     padding: 12px;
 }
 .main {
-    max-height: calc(100vh - 50px);
+    max-height: calc(100dvh - 50px);
 }}
 .grecaptcha-badge {
     display: none !important;
