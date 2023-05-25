@@ -164,7 +164,7 @@ body {
   <aside class="sample">
     <div class="div-block-4"><img src="images/close-24px.svg" alt="" class="close-btn-sample">
       <div class="div-block-3 gray-bg">
-        <div class="w-embed w-iframe"><iframe src="https://3min.co.il/archive/january-8-2021" frameborder="0" style="height: 600px;max-height: 98vw;width: 600px;max-width: 98vw;"></iframe></div>
+        <div class="w-embed w-iframe"><iframe src="./archive/january-8-2021.html" frameborder="0" style="height: 600px;max-height: 98vw;width: 600px;max-width: 98vw;"></iframe></div>
       </div>
     </div>
   </aside>
@@ -191,5 +191,18 @@ body {
   <script src="js/3min.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script async="" defer="" src="https://esa.3min.co.il/latest.js"></script>
-  <noscript><img src="https://esa.3min.co.il/noscript.gif" alt=""></noscript></body>
+  <!-- Open ".sample" popup when clicking on ".text-block" by injecting custom CSS and nice fade-in animation -->
+  <script>
+  $(document).ready(function() {
+      $(".text-block").click(function() {
+        $(".sample").css("display", "flex");
+      });
+      $(".close-btn-sample").click(function() {
+        $(".sample").css("display", "none");
+      });
+    });
+  </script>
+
+  <img src="https://esa.3min.co.il/noscript.gif" alt=""></noscript>
+</body>
 </html>
